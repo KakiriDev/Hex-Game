@@ -16,6 +16,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import javafx.scene.control.MenuItem;
+
 public class Main extends Application {
     private HBox hBox;
     private VBox menuBox;
