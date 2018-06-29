@@ -1,8 +1,78 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="500.0" prefWidth="600.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="500.0" smooth="false" strokeType="INSIDE" strokeWidth="3.0" width="600.0">
+               <stroke>
+                  <LinearGradient endX="0.33333333333333337" endY="1.0" startY="0.2476190476190476">
+                     <stops>
+                        <Stop color="#1500ff" />
+                        <Stop color="RED" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Rectangle>
+            <VBox id="vBoxMain" alignment="CENTER" layoutX="200.0" layoutY="14.0" nodeOrientation="LEFT_TO_RIGHT" spacing="10.0">
+               <children>
+                  <Label contentDisplay="CENTER" text="HEX Game" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Bodoni MT" size="40.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="0.1523809523809524" endY="0.3285714285714286" startX="0.1523809523809524" startY="0.6666666666666667">
+                           <stops>
+                              <Stop color="RED" />
+                              <Stop color="#2a00d0" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Text fill="RED" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="TUTAJ WSTAWIE MOZE" textAlignment="CENTER" wrappingWidth="50.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#ddff00" strokeType="OUTSIDE" strokeWidth="0.0" text="JAKIES FOTY">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="PLAYER VS PLAYER" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="PLAYER VS AI" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="ONLINE" />
+                  <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="LANGUAGE: PL/ENG" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="EXIT" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
 </GridPane>
