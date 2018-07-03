@@ -14,10 +14,12 @@ public class Main extends Application {
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
+        /*added comment by wojtek 3.07.18*/
     }
 
 
     public static void main(String[] args) {
         launch(args);
     }
+/* looking for changes or not*/
 }
